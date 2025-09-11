@@ -1,30 +1,14 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./layout/Header";
-import Footer from "./layout/Footer";
-import HomePage from "./pages/HomePage";
+import Header from "./layout/Header.jsx";
+import Footer from "./layout/Footer.jsx";
+import PageContent from "./layout/PageContent.jsx";
 
-function App() {
+export default function App() {
   return (
-    <Router>
-        <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      {/* diğer componentler buraya */}
+      <PageContent />
+      <Footer />
     </div>
-
-        {/* Page content */}
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            {/* İleride başka sayfaları da ekleyebiliriz */}
-          </Routes>
-        </main>
-
-        {/* Footer */}
-        <Footer />
-      </div>
-    </Router>
   );
 }
-
-export default App;
