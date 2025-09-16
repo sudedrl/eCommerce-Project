@@ -1,13 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Fonts: Montserrat & Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <section id="header">
+      <a href="#"><img src="img/NewLogo.png"class="logo"></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.hyml">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">
+             <i class="fa-solid fa-bag-shopping"></i>
+             </a></li>
+        </ul>
+      </div>
+     </section>
+
+
+    <section id="hero">
+      <h4>Summer 2025</h4>
+      <h2>SELECTION</h2>
+      <button>Explore More</button>
+
+    </section>
+
+    <section id="feature" class=".section-p1">
+      <div class="fe-box">
+        <img src="img/woman2.jpg" alt="woman">
+        <h6>WOMAN</h6>
+      </div>
+       <div class="fe-box">
+        <img src="img/man2.jpg" alt="man">
+        <h6>MAN</h6>
+      </div>
+       <div class="fe-box">
+        <img src="img/aksesuar.jpg" alt="accessories">
+        <h6>ACCESSORIES</h6>
+      </div>
+       <div class="fe-box">
+        <img src="img/decoration.jpg" alt="home">
+        <h6>HOME</h6>
+      </div>
+    </section>
+
+    <section id="product1" class=".section-p1">
+      <h2>BEST SELLERS</h2>
+      <p>Explore More</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/clothing.jpg" alt="linen">
+          <div class="des">
+            
+            <h5>Oversized Linen Blouse</h5>
+            <div class="linen">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>$45.00</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/clothing.jpg" alt="shirt">
+          <div class="des">
+            
+            <h5>Relaxed Fit Shirt</h5>
+            <div class="linen">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>$40.00</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/clothing.jpg" alt="trousers">
+          <div class="des">
+            
+            <h5>High-Waisted Trousers</h5>
+            <div class="linen">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>$60.00</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+         <div class="pro">
+          <img src="img/clothing.jpg" alt="shirt">
+          <div class="des">
+            
+            <h5>Relaxed Fit Shirt</h5>
+            <div class="linen">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>$40.00</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+
+       
+        </div>
+
+
+
+
+    </section>
+
+    <section id="banner" class=".section-m1">
+      <h1>Cosmetics</h1>
+      <h4>We invite you to discover the standout products of our COSMETICS brand and more, the perfect complement to your iconic style.</h4>
+      <button>Visit</button>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
