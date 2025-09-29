@@ -442,3 +442,412 @@ body {
 .trend-image-small {
   flex: 2;
 }
+
+
+
+
+
+/* Trending Products Section */
+#trending-products {
+  padding: 40px 80px;
+  background-color: #fdfdfd;
+}
+
+#trending-products .products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Ürün Kartları */
+#trending-products .product-card {
+  background-color: #fff;
+  border-radius: 0px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 10px;
+}
+
+#trending-products .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Ürün Görselleri */
+#trending-products .product-card img {
+  width: 100%;
+  height: 350px; /* daha kısa */
+  object-fit: cover;
+  display: block;
+}
+
+/* Ürün Bilgileri */
+#trending-products .product-info {
+  padding: 10px 12px;
+}
+
+#trending-products .product-info h5 {
+  font-size: 0.95rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Rating Yıldızları */
+#trending-products .rating i {
+  color: #c49a6c;
+  font-size: 0.85rem;
+  margin-right: 2px;
+}
+
+/* Fiyat ve Cart */
+#trending-products .price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+#trending-products .price-cart h4 {
+  font-size: 1rem;
+  color: #222;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#trending-products .price-cart .cart {
+  font-size: 1.2rem;
+  color: #6b4226;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#trending-products .price-cart .cart:hover {
+  color: #a0522d;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  #trending-products .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #trending-products .products-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+     padding: 30px 40px 30px 40px;
+}
+
+#sm-banner .banner-box {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  color: #fff;
+  
+}
+
+#sm-banner .box1 {
+  background-image: url("img/bannersale.jpg");
+}
+
+#sm-banner .box2 {
+  background-image: url("img/findshope.jpg");
+}
+
+   #sm-banner h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+   }
+    #sm-banner h2 {
+      color: #fff;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .shop-btn {
+      color: #ffffff;
+      background-color: transparent;
+      border: 0;
+      padding: 14px 40px 14px 5px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: underline;
+    }
+    
+    .find-btn {
+      color: #ffffff;
+      background-color: transparent;
+      border: 0;
+      padding: 14px 40px 14px 5px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: underline;
+    }
+
+
+
+    #banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;        /* kutular arası boşluk */
+  margin: 40px 0;
+  color: #ffffff;
+}
+
+#banner3 .banner-box {
+  flex: 1 1 30%;    /* her kutu %30 genişlik */
+  height: 30vh;     /* kutuların boyu */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #ffffff;
+ 
+}
+
+
+/* Her kutuya farklı resim */
+#banner3 .box3 {
+  background-image: url("img/winter.jpg");
+}
+
+#banner3 .box4 {
+  background-image: url("img/newstore.jpg");
+}
+
+#banner3 .box5 {
+  background-image: url("img/catwalk.jpg");
+}
+
+#banner3 h2 {
+ color: #ffffff;
+}
+
+
+
+
+
+#newsletter {
+  background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+#newsletter .newstext {
+  flex: 1 1 300px;
+}
+
+#newsletter .newstext h4 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+#newsletter .newstext p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+#newsletter .newstext span {
+  font-weight: 600;
+  color: #111;
+}
+
+#newsletter .form {
+  flex: 1 1 300px;
+  display: flex;
+  gap: 12px;
+}
+
+#newsletter .form input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 1px solid #ddd;
+  
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#newsletter .form input:focus {
+  outline: none;
+  border-color: #222;
+  box-shadow: 0 0 0 4px rgba(34, 34, 34, 0.1);
+}
+
+#newsletter .form button {
+  padding: 14px 28px;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+#newsletter .form button:hover {
+  background: #444;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;       /* kolonlar arası boşluk */
+  padding: 40px 80px;
+  background: #f9f9f9;
+  position: relative;
+}
+
+footer .col {
+  flex: 1 1 220px; /* kolonların esnekliği */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .copyright {
+  width: 100%;         /* tüm genişliği kaplasın */
+  text-align: center;  /* ortaya hizala */
+  margin-top: 30px;    /* kolonların altına boşluk */
+  font-size: 13px;
+  color: #555;
+}
+
+
+footer .col img:first-of-type {
+  width: 120px; /* istediğin boyuta göre ayarla */
+  height: auto; /* orantıyı korusun */
+}
+
+footer h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #222;
+}
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;  
+
+  }
+  
+footer.follow {
+    margin-top: 20px; 
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+
+footer .col img:first-of-type {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+
+
+
+footer h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #222;
+}
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;  
+
+  }
+  
+footer.follow {
+    margin-top: 20px; 
+}
+
+footer .follow i {
+  color: #555;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .follow i:hover {
+  color: #222;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+footer.install .row img{
+  border: 1px solid #000000;
+  border-radius: 6px;
+}
+footer.install .row img{
+  border: none;
+  border-radius: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+footer.install .row img:hover {
+  transform: scale(1.05);
+}
+footer .install p {
+  margin: 10px 0; 
+}
+
+footer .install .row {
+  margin-bottom: 15px; 
+}
